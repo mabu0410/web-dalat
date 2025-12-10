@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đà Lạt – Thành phố ngàn hoa & sương mù</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🌸</span>
+                <span class="logo-text">Đà Lạt</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                <li><a href="#places" class="nav-link">Địa điểm</a></li>
+                <li><a href="#food" class="nav-link">Ẩm thực</a></li>
+                <li><a href="#map" class="nav-link">Bản đồ</a></li>
+                <li><a href="#reviews" class="nav-link">Cảm nhận</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-badge">✨ Khám phá thiên đường</span>
+            <h1 class="hero-title">
+                Đà Lạt
+                <span class="title-accent">Hẹn nhau giữa sương và thông</span>
+            </h1>
+            <p class="hero-description">
+                Nơi khí hậu mát lành quanh năm, hồ xanh – rừng thông – đồi cỏ – cafés view triệu đô. 
+                Thiên đường check-in dành cho những tâm hồn yêu cái đẹp.
+            </p>
+            <div class="hero-chips">
+                <div class="chip">
+                    <span class="chip-icon">🌡️</span>
+                    <span class="chip-text">Khí hậu 15–24°C</span>
+                </div>
+                <div class="chip">
+                    <span class="chip-icon">🌺</span>
+                    <span class="chip-text">Mùa hoa quanh năm</span>
+                </div>
+                <div class="chip">
+                    <span class="chip-icon">☕</span>
+                    <span class="chip-text">Thiên đường cà phê</span>
+                </div>
+            </div>
+            <a href="#places" class="hero-cta">
+                <span>Khám phá ngay</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hero-scroll">
+            <span>Cuộn xuống</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Places Section -->
+    <section class="places" id="places">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📍 Địa điểm</span>
+                <h2 class="section-title">Điểm đến nổi bật</h2>
+                <p class="section-subtitle">Những địa danh không thể bỏ lỡ khi đến với thành phố ngàn hoa</p>
+            </div>
+            <div class="places-grid">
+                <!-- Place Card 1 -->
+                <article class="place-card" data-aos="fade-up">
+                    <div class="place-image">
+                        <img src="imgs/ho_xuan_huong.jpg" alt="Hồ Xuân Hương">
+                        <div class="place-overlay">
+                            <span class="place-tag">Biểu tượng</span>
+                        </div>
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Hồ Xuân Hương</h3>
+                        <p class="place-desc">Trái tim của Đà Lạt, nơi lý tưởng để đạp vịt, dạo bộ và ngắm hoàng hôn lãng mạn bên hàng thông cổ thụ.</p>
+                        <div class="place-info">
+                            <div class="info-item">
+                                <span class="info-icon">🕐</span>
+                                <span>24/7</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">💰</span>
+                                <span>Miễn phí</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Place Card 2 -->
+                <article class="place-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="place-image">
+                        <img src="imgs/doi_che_cau_dat.jpg" alt="Đồi chè Cầu Đất">
+                        <div class="place-overlay">
+                            <span class="place-tag">View đẹp</span>
+                        </div>
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Đồi Chè Cầu Đất</h3>
+                        <p class="place-desc">Những đồi chè xanh mướt trải dài, sương mù phủ trắng buổi sớm – thiên đường cho những bức ảnh đẹp như mơ.</p>
+                        <div class="place-info">
+                            <div class="info-item">
+                                <span class="info-icon">🕐</span>
+                                <span>6:00 - 18:00</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">💰</span>
+                                <span>20.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Place Card 3 -->
+                <article class="place-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="place-image">
+                        <img src="imgs/langbiang.jpg" alt="Langbiang">
+                        <div class="place-overlay">
+                            <span class="place-tag">Phiêu lưu</span>
+                        </div>
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Núi Langbiang</h3>
+                        <p class="place-desc">Đỉnh núi huyền thoại với câu chuyện tình yêu K'Lang và H'Biang. Chinh phục để ngắm toàn cảnh Đà Lạt từ trên cao.</p>
+                        <div class="place-info">
+                            <div class="info-item">
+                                <span class="info-icon">🕐</span>
+                                <span>7:00 - 17:00</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">💰</span>
+                                <span>50.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Place Card 4 -->
+                <article class="place-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="place-image">
+                        <img src="imgs/thung_lung_tinh_yeu.jpg" alt="Thung Lũng Tình Yêu">
+                        <div class="place-overlay">
+                            <span class="place-tag">Lãng mạn</span>
+                        </div>
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Thung Lũng Tình Yêu</h3>
+                        <p class="place-desc">Điểm đến lãng mạn với hồ nước trong xanh, vườn hoa rực rỡ và những góc check-in cực chất cho các cặp đôi.</p>
+                        <div class="place-info">
+                            <div class="info-item">
+                                <span class="info-icon">🕐</span>
+                                <span>7:00 - 17:30</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">💰</span>
+                                <span>100.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Place Card 5 -->
+                <article class="place-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="place-image">
+                        <img src="imgs/ga_da_lat.jpg" alt="Ga Đà Lạt">
+                        <div class="place-overlay">
+                            <span class="place-tag">Di sản</span>
+                        </div>
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Ga Đà Lạt</h3>
+                        <p class="place-desc">Nhà ga cổ nhất Đông Dương với kiến trúc Pháp độc đáo. Trải nghiệm tàu hỏa cổ đi qua rừng thông thơ mộng.</p>
+                        <div class="place-info">
+                            <div class="info-item">
+                                <span class="info-icon">🕐</span>
+                                <span>7:30 - 17:00</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">💰</span>
+                                <span>Tùy tuyến</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Place Card 6 -->
+                <article class="place-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="place-image">
+                        <img src="imgs/que_garden.jpg" alt="Que Garden">
+                        <div class="place-overlay">
+                            <span class="place-tag">Check-in</span>
+                        </div>
+                    </div>
+                    <div class="place-content">
+                        <h3 class="place-name">Que Garden</h3>
+                        <p class="place-desc">Khu vườn cổ tích với hàng nghìn góc sống ảo. Hồ nước xanh ngọc, cầu gỗ và những căn nhà nhỏ xinh như truyện tranh.</p>
+                        <div class="place-info">
+                            <div class="info-item">
+                                <span class="info-icon">🕐</span>
+                                <span>7:00 - 18:00</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">💰</span>
+                                <span>80.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section class="food" id="food">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🍜 Ẩm thực</span>
+                <h2 class="section-title">Hương vị Đà Lạt</h2>
+                <p class="section-subtitle">Những món ngon đặc sản không thể bỏ qua của thành phố sương mù</p>
+            </div>
+            <div class="food-grid">
+                <!-- Food Card 1 -->
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="imgs/banh-trang-nuong-da-lat-1.jpg" alt="Bánh tráng nướng">
+                    </div>
+                    <div class="food-content">
+                        <h3 class="food-name">Bánh Tráng Nướng</h3>
+                        <p class="food-desc">"Pizza Đà Lạt" với lớp bánh giòn rụm, phủ trứng, hành, bơ và xúc xích thơm lừng.</p>
+                        <div class="food-details">
+                            <div class="food-ingredients">
+                                <span class="label">Nguyên liệu:</span>
+                                <span>Bánh tráng, trứng cút, hành lá, bơ, phô mai</span>
+                            </div>
+                            <div class="food-where">
+                                <span class="label">Nên thử:</span>
+                                <span>Chợ đêm Đà Lạt, Hẻm 66 Phan Đình Phùng</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Food Card 2 -->
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="imgs/lau_ga_la_e.jpg" alt="Lẩu gà lá é">
+                    </div>
+                    <div class="food-content">
+                        <h3 class="food-name">Lẩu Gà Lá É</h3>
+                        <p class="food-desc">Gà thả vườn nấu với lá é thơm nức, ăn kèm rau rừng – món đặc sản nhất định phải thử.</p>
+                        <div class="food-details">
+                            <div class="food-ingredients">
+                                <span class="label">Nguyên liệu:</span>
+                                <span>Gà ta, lá é, nấm, rau rừng Đà Lạt</span>
+                            </div>
+                            <div class="food-where">
+                                <span class="label">Nên thử:</span>
+                                <span>Lẩu gà Ông Già, đường Phan Như Thạch</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Food Card 3 -->
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="imgs/kem_bo_da_lat.jpg" alt="Kem bơ">
+                    </div>
+                    <div class="food-content">
+                        <h3 class="food-name">Kem Bơ Đà Lạt</h3>
+                        <p class="food-desc">Kem béo ngậy từ bơ tươi Đà Lạt, mát lành và thơm ngon – món tráng miệng "quốc dân".</p>
+                        <div class="food-details">
+                            <div class="food-ingredients">
+                                <span class="label">Nguyên liệu:</span>
+                                <span>Bơ sáp Đà Lạt, sữa đặc, đá bào</span>
+                            </div>
+                            <div class="food-where">
+                                <span class="label">Nên thử:</span>
+                                <span>Kem bơ Thanh Thảo, Kem bơ Ba Mẹt</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Food Card 4 -->
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="imgs/sua_dau_nanh.jpg" alt="Sữa đậu nành">
+                    </div>
+                    <div class="food-content">
+                        <h3 class="food-name">Sữa Đậu Nành Nóng</h3>
+                        <p class="food-desc">Ly sữa nóng hổi trong tiết trời se lạnh, ăn kèm bánh mì hoặc quẩy giòn tan.</p>
+                        <div class="food-details">
+                            <div class="food-ingredients">
+                                <span class="label">Nguyên liệu:</span>
+                                <span>Đậu nành, đường, lá dứa</span>
+                            </div>
+                            <div class="food-where">
+                                <span class="label">Nên thử:</span>
+                                <span>Chợ Đà Lạt, các xe đẩy buổi sáng</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Food Card 5 -->
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="imgs/banh_can.jpg" alt="Bánh căn">
+                    </div>
+                    <div class="food-content">
+                        <h3 class="food-name">Bánh Căn</h3>
+                        <p class="food-desc">Bánh nhỏ xinh đổ bằng khuôn đất, giòn rụm ăn kèm nước mắm pha và hành phi.</p>
+                        <div class="food-details">
+                            <div class="food-ingredients">
+                                <span class="label">Nguyên liệu:</span>
+                                <span>Bột gạo, trứng cút, hành lá, mỡ hành</span>
+                            </div>
+                            <div class="food-where">
+                                <span class="label">Nên thử:</span>
+                                <span>Bánh căn Cô Liên, đường Tăng Bạt Hổ</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Food Card 6 -->
+                <article class="food-card">
+                    <div class="food-image">
+                        <img src="imgs/banh_uot_long_ga.jpg" alt="Bánh ướt lòng gà">
+                    </div>
+                    <div class="food-content">
+                        <h3 class="food-name">Bánh Ướt Lòng Gà</h3>
+                        <p class="food-desc">Bánh ướt mềm mịn cuốn lòng gà giòn sần sật, chan nước mắm chua ngọt – món sáng đặc trưng Đà Lạt.</p>
+                        <div class="food-details">
+                            <div class="food-ingredients">
+                                <span class="label">Nguyên liệu:</span>
+                                <span>Bánh ướt, lòng gà, rau thơm, hành phi</span>
+                            </div>
+                            <div class="food-where">
+                                <span class="label">Nên thử:</span>
+                                <span>Bánh ướt lòng gà Bà Tám, chợ Đà Lạt</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🗺️ Bản đồ</span>
+                <h2 class="section-title">Khám phá Đà Lạt</h2>
+                <p class="section-subtitle">Lên kế hoạch cho hành trình của bạn</p>
+            </div>
+            <div class="map-content">
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15601.417416043!2d108.44138!3d11.9404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112fef20988b1%3A0xad5f228b672bf930!2zSMOgIFh1w6JuIEjGsMahbmc!5e0!3m2!1svi!2s!4v1699000000000!5m2!1svi!2s"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="routes-panel">
+                    <h3 class="routes-title">
+                        <span class="routes-icon">🚗</span>
+                        Tuyến đường gợi ý
+                    </h3>
+                    <div class="routes-list">
+                        <div class="route-item">
+                            <div class="route-header">
+                                <span class="route-badge">Tuyến 1</span>
+                                <span class="route-time">~30 phút</span>
+                            </div>
+                            <div class="route-path">
+                                <span class="route-from">Trung tâm TP</span>
+                                <span class="route-arrow">→</span>
+                                <span class="route-to">Đồi Chè Cầu Đất</span>
+                            </div>
+                            <p class="route-desc">Qua cung đường đèo uốn lượn, ngắm rừng thông hai bên đường.</p>
+                        </div>
+                        <div class="route-item">
+                            <div class="route-header">
+                                <span class="route-badge">Tuyến 2</span>
+                                <span class="route-time">~20 phút</span>
+                            </div>
+                            <div class="route-path">
+                                <span class="route-from">Trung tâm TP</span>
+                                <span class="route-arrow">→</span>
+                                <span class="route-to">Núi Langbiang</span>
+                            </div>
+                            <p class="route-desc">Đường đi thuận tiện, có thể thuê xe máy hoặc taxi.</p>
+                        </div>
+                        <div class="route-item">
+                            <div class="route-header">
+                                <span class="route-badge">Tuyến 3</span>
+                                <span class="route-time">~15 phút</span>
+                            </div>
+                            <div class="route-path">
+                                <span class="route-from">Hồ Xuân Hương</span>
+                                <span class="route-arrow">→</span>
+                                <span class="route-to">Thung Lũng Tình Yêu</span>
+                            </div>
+                            <p class="route-desc">Kết hợp tham quan 2 điểm trong buổi sáng.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">💬 Cảm nhận</span>
+                <h2 class="section-title">Du khách nói gì?</h2>
+                <p class="section-subtitle">Những trải nghiệm thực tế từ khách du lịch</p>
+            </div>
+            <div class="reviews-content">
+                <div class="reviews-testimonials">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Avatar">
+                            </div>
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Nguyễn Thị Hương</span>
+                                <span class="testimonial-date">Tháng 11, 2024</span>
+                            </div>
+                            <div class="testimonial-rating">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Đà Lạt thực sự là thiên đường! Không khí mát mẻ, cảnh đẹp lung linh. Lần đầu được trải nghiệm sương mù buổi sáng, cảm giác như đang ở xứ thần tiên vậy!"</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Avatar">
+                            </div>
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Trần Minh Đức</span>
+                                <span class="testimonial-date">Tháng 10, 2024</span>
+                            </div>
+                            <div class="testimonial-rating">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Lẩu gà lá é ngon xuất sắc! Đặc biệt là đi xe máy quanh hồ Xuân Hương buổi tối, lãng mạn không tả nổi. Chắc chắn sẽ quay lại!"</p>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Avatar">
+                            </div>
+                            <div class="testimonial-info">
+                                <span class="testimonial-name">Lê Thu Trang</span>
+                                <span class="testimonial-date">Tháng 9, 2024</span>
+                            </div>
+                            <div class="testimonial-rating">
+                                <span>⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Chuyến đi tuyệt vời cùng gia đình. Langbiang hơi mệt nhưng view đỉnh rất xứng đáng. Kem bơ ở đây ngon nhất Việt Nam!"</p>
+                    </div>
+                </div>
+
+                <div class="review-form-wrapper">
+                    <h3 class="form-title">Chia sẻ cảm nhận của bạn</h3>
+                    <form class="review-form" id="review-form">
+                        <div class="form-group">
+                            <label for="name">Họ tên</label>
+                            <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Mức độ hài lòng</label>
+                            <div class="rating-input">
+                                <input type="radio" id="star5" name="rating" value="5">
+                                <label for="star5">⭐</label>
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4">⭐</label>
+                                <input type="radio" id="star3" name="rating" value="3" checked>
+                                <label for="star3">⭐</label>
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2">⭐</label>
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1">⭐</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nội dung góp ý</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Chia sẻ trải nghiệm của bạn tại Đà Lạt..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Gửi cảm nhận</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🌸 Đà Lạt</span>
+                    <p class="footer-tagline">Thành phố ngàn hoa & sương mù</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Trang chủ</a>
+                    <a href="#places">Địa điểm</a>
+                    <a href="#food">Ẩm thực</a>
+                    <a href="#map">Bản đồ</a>
+                    <a href="#reviews">Cảm nhận</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">📘</a>
+                    <a href="#" class="social-link">📷</a>
+                    <a href="#" class="social-link">🐦</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Đà Lạt Tourism. Made with 💚 for the city of flowers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <span class="modal-icon">✅</span>
+            <h3>Cảm ơn bạn!</h3>
+            <p>Cảm nhận của bạn đã được ghi nhận. Chúng tôi rất trân trọng ý kiến đóng góp của bạn!</p>
+            <button class="modal-close" onclick="closeModal()">Đóng</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

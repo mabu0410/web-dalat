@@ -1,0 +1,17 @@
+{
+  "name": "web-dalat",
+  "version": "1.0.0",
+  "description": "Website giới thiệu Đà Lạt - Thành phố ngàn hoa & sương mù",
+  "scripts": {
+    "dev": "python -m http.server 8080",
+    "start": "python -m http.server 8080"
+  },
+  "keywords": [
+    "dalat",
+    "tourism",
+    "vietnam"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
