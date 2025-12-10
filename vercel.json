@@ -1,20 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
   "headers": [
     {
-      "source": "/(.*)",
+      "source": "/(.*\\.(jpg|jpeg|png|gif|svg|webp|ico|css|js|woff|woff2|ttf|eot))",
       "headers": [
         {
           "key": "Cache-Control",
